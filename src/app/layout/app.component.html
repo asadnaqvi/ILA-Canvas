@@ -1,0 +1,23 @@
+<div *ngIf="authentication">
+
+  <app-head></app-head>
+  <mat-toolbar color="primary" class="app-toolbar">
+      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class="app-name">Responsive App</h1>
+    </mat-toolbar>
+  <mat-drawer-container class="app-container" autosize>
+
+    <mat-drawer #drawer class="app-sidenav" mode="side">
+      <app-left-nav></app-left-nav>
+    </mat-drawer>
+    <div style="height:400px;">
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </mat-drawer-container>
+</div>
+
+<div *ngIf="!authentication">
+  <app-login></app-login>
+</div>
