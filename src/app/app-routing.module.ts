@@ -5,6 +5,7 @@ import { ObjectIdentificationComponent } from './components/object-identificatio
 import { FindMissingCharacterComponent } from './components/find-missing-character/find-missing-character.component';
 import { CountObjectsComponent } from './components/count-objects/count-objects.component';
 import {CompleteTheNameComponent} from './components/complete-the-name/complete-the-name.component';
+import { ErrorResultComponent } from './components/error-result/error-result.component';
 const routes: Routes = [{
   path:'',
   component:DashboardComponent
@@ -24,6 +25,10 @@ const routes: Routes = [{
 {
   path:'ctn',
   component:CompleteTheNameComponent
+},
+{
+  path:'error',
+  component:ErrorResultComponent
 }];
 
 @NgModule({
