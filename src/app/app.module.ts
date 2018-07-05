@@ -16,6 +16,7 @@ import { CountObjectsComponent } from './components/count-objects/count-objects.
 import { LoginComponent } from './components/login/login.component';
 import { HeadComponent } from './layout/head/head.component';
 import { LeftNavComponent } from './layout/left-nav/left-nav.component';
+import { CompleteTheNameComponent } from './components/complete-the-name/complete-the-name.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LeftNavComponent } from './layout/left-nav/left-nav.component';
     CountObjectsComponent,
     LoginComponent,
     HeadComponent,
-    LeftNavComponent
+    LeftNavComponent,
+    CompleteTheNameComponent
   ],
   imports: [
     BrowserModule,
