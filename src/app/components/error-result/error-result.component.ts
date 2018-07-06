@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-error-result',
@@ -8,8 +8,10 @@ import { Router } from '@angular/router';
 })
 export class ErrorResultComponent implements OnInit {
 
-  constructor(private router:Router) { }
-
+  constructor(private location:Location) { }
+goBack(){
+  this.location.back()
+}
   ngOnInit() {
   }
 
