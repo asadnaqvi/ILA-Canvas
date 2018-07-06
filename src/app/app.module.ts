@@ -18,6 +18,7 @@ import { HeadComponent } from './layout/head/head.component';
 import { LeftNavComponent } from './layout/left-nav/left-nav.component';
 import { CompleteTheNameComponent } from './components/complete-the-name/complete-the-name.component';
 import { ErrorResultComponent } from './components/error-result/error-result.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ErrorResultComponent } from './components/error-result/error-result.com
     HeadComponent,
     LeftNavComponent,
     CompleteTheNameComponent,
-    ErrorResultComponent
+    ErrorResultComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

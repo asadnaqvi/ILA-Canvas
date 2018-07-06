@@ -6,8 +6,9 @@ import { FindMissingCharacterComponent } from './components/find-missing-charact
 import { CountObjectsComponent } from './components/count-objects/count-objects.component';
 import {CompleteTheNameComponent} from './components/complete-the-name/complete-the-name.component';
 import { ErrorResultComponent } from './components/error-result/error-result.component';
+import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
 const routes: Routes = [{
-  path:'',
+  path:'dashboard',
   component:DashboardComponent
 },
 {
@@ -29,6 +30,15 @@ const routes: Routes = [{
 {
   path:'error',
   component:ErrorResultComponent
+},
+{
+  path:'',
+  redirectTo : '/dashboard',
+  pathMatch:'full'
+},
+{
+  path:'**',
+  component:PageNotFoundComponent
 }];
 
 @NgModule({
