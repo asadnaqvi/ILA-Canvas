@@ -1,14 +1,29 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HeadComponent } from '../layout/head/head.component';
+import { LeftNavComponent } from '../layout/left-nav/left-nav.component';
+import { LoginComponent } from '../components/login/login.component';
+import {MatButtonModule, MatCheckboxModule,MatListModule,MatToolbarModule,MatIconModule} from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatButtonModule, 
+    MatCheckboxModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSidenavModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,HeadComponent,LeftNavComponent,LoginComponent
       ],
     }).compileComponents();
   }));
