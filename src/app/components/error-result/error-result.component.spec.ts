@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {Location,LocationStrategy,PathLocationStrategy,APP_BASE_HREF} from '@angular/common';
 import { ErrorResultComponent } from './error-result.component';
 
 describe('ErrorResultComponent', () => {
@@ -8,7 +8,10 @@ describe('ErrorResultComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ErrorResultComponent ]
+      declarations: [ ErrorResultComponent ],
+      providers:[Location,
+        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        { provide: APP_BASE_HREF, useValue: ''}]
     })
     .compileComponents();
   }));
