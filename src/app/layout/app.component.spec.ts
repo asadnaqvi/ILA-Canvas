@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HeadComponent } from '../layout/head/head.component';
 import { LeftNavComponent } from '../layout/left-nav/left-nav.component';
@@ -13,6 +14,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
+        BrowserAnimationsModule,
         MatButtonModule, 
     MatCheckboxModule,
     MatListModule,
@@ -41,6 +43,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ILA-Canvas!');
+    expect(compiled.querySelector('h1').textContent).toContain('ILA-Canvas');
   }));
 });
