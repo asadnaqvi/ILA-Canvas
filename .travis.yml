@@ -6,7 +6,7 @@ dist: trusty
 
 branches:
   only:
-  - travis-ci
+  - master
   except:
   - gh-pages
 
@@ -28,4 +28,4 @@ deploy:
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   local_dir: dist/ILA-Canvas
   on:
-    branch: travis-ci
+    branch: master
