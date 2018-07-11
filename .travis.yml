@@ -7,8 +7,6 @@ dist: trusty
 branches:
   only:
   - master
-  except:
-  - gh-pages
 
 before_script:
  - export CHROME_BIN=/usr/bin/google-chrome
