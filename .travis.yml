@@ -18,7 +18,7 @@ before_script:
  - sudo dpkg -i google-chrome*.deb
 
 script:   
-  - ng build -bh "https://asadnaqvi.github.io/ILA-Canvas/"
+  - ng build --base-href "https://asadnaqvi.github.io/ILA-Canvas/"
 
 deploy:
   provider: pages
