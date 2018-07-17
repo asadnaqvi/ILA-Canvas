@@ -1,16 +1,20 @@
 <div *ngIf="authentication">
 
-  <app-head></app-head>
-  <mat-toolbar color="warn" class="app-toolbar">
+  <!-- <app-head></app-head> -->
+  <mat-toolbar color="primary" class="fixed-header">
+  <mat-toolbar-row>
       <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="app-name">Responsive App</h1>
+      <h1 class="app-name" routerLink="/">ILA-Canvas</h1>
+      <a mat-button routerLink="/image-library">Image Library</a>
+      <a mat-button >About</a>
+  </mat-toolbar-row>     
     </mat-toolbar>
   <mat-drawer-container class="app-container" autosize>
 
     <mat-drawer #drawer class="app-sidenav" mode="side">
       <app-left-nav></app-left-nav>
     </mat-drawer>
-    <div style="height:400px;">
+    <div style="min-height:400px;">
 
       <router-outlet></router-outlet>
 

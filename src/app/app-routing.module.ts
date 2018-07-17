@@ -7,6 +7,7 @@ import { CountObjectsComponent } from './components/count-objects/count-objects.
 import {CompleteTheNameComponent} from './components/complete-the-name/complete-the-name.component';
 import { ErrorResultComponent } from './components/error-result/error-result.component';
 import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
+import { ImageLibraryComponent } from './components/image-library/image-library.component';
 const routes: Routes = [{
   path:'dashboard',
   component:DashboardComponent
@@ -26,6 +27,10 @@ const routes: Routes = [{
 {
   path:'ctn',
   component:CompleteTheNameComponent
+},
+{
+  path:'image-library',
+  component:ImageLibraryComponent
 },
 {
   path:'error',
