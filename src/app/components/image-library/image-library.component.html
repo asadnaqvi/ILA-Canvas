@@ -1,3 +1,20 @@
-<p>
-  image-library works!
-</p>
+<mat-grid-list cols="3">
+    <mat-grid-tile
+        *ngFor="let item of LibraryImages">    
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title>{{item.title}}</mat-card-title>
+              <mat-card-subtitle>Some text information</mat-card-subtitle>
+              <img mat-card-avatar [src]="item.avatar">
+          </mat-card-header>
+          
+          <img mat-card-image [src]="item.path">
+          
+          <mat-card-actions>
+            <a class="primary" mat-button>Add To Current Activity</a>
+          </mat-card-actions>
+          <mat-card-footer>This image is licensed to ILA-Canvas</mat-card-footer>
+
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
