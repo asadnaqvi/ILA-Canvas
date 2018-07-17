@@ -19,6 +19,7 @@ import { LeftNavComponent } from './layout/left-nav/left-nav.component';
 import { CompleteTheNameComponent } from './components/complete-the-name/complete-the-name.component';
 import { ErrorResultComponent } from './components/error-result/error-result.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ImageLibraryComponent } from './components/image-library/image-library.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     LeftNavComponent,
     CompleteTheNameComponent,
     ErrorResultComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ImageLibraryComponent
   ],
   imports: [
     BrowserModule,
