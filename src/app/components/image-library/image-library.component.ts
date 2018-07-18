@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{Router,ActivatedRoute} from '@angular/router';
+import { Location } from '@angular/common';
 import {ImageConnectorService} from '../../services/image-connector.service';
 
 @Component({
@@ -10,10 +11,10 @@ import {ImageConnectorService} from '../../services/image-connector.service';
 export class ImageLibraryComponent implements OnInit {
 LibraryImages = []
 activityName:string=""
-  constructor(private route:ActivatedRoute,private imageConnector:ImageConnectorService,private router:Router) { }
+  constructor(private route:ActivatedRoute,private imageConnector:ImageConnectorService,private router:Router,private location:Location) { }
 setBaseImage(path){  
 this.imageConnector.setImage(path)
-this.router.navigate(['/coc'])
+this.location.back()
 }
   ngOnInit() {
     this.route.paramMap.subscribe(stateParams=>{

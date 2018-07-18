@@ -11,7 +11,7 @@
           <img mat-card-image [src]="item.path">
           
           <mat-card-actions>
-            <button class="primary" mat-button (click)="setBaseImage(item.path)">Add To Current Activity</button>
+            <button *ngIf="activityName" class="primary" mat-button (click)="setBaseImage(item.path)">Add To Current Activity</button>
           </mat-card-actions>
           <mat-card-footer>This image is licensed to ILA-Canvas</mat-card-footer>
 
