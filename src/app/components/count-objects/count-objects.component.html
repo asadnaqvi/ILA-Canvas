@@ -3,5 +3,6 @@
 <p>2- select how many times you want to repat that image</p>
 <p>3- click preview</p>
 <p>4- system will display preview, presenting the image repated number of times, with input box to enter count, if answer is correct, move to congrats page. if answer is false, move to error page and ask to try again. also have "show answer button"</p>
+<img *ngIf="imagePath" [src]="imagePath">
 <a mat-button routerLink="/image-library/coc">Choose Image</a>
 <a mat-button routerLink="/error">Go to Error Page</a>

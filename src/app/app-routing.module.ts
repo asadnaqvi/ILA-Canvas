@@ -22,7 +22,10 @@ const routes: Routes = [{
 },
 {
   path:'coc',
-  component:CountObjectsComponent
+  component:CountObjectsComponent,
+  data:{
+    imagePath:''
+  }
 },
 {
   path:'ctn',
