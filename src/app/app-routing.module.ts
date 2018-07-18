@@ -29,6 +29,10 @@ const routes: Routes = [{
   component:CompleteTheNameComponent
 },
 {
+  path:'image-library/:id',
+  component:ImageLibraryComponent
+},
+{
   path:'image-library',
   component:ImageLibraryComponent
 },
