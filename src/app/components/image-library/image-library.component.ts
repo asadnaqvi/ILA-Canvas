@@ -31,30 +31,30 @@ this.location.back()
       avatar:"assets/images/library/p2.jpeg"
     },
     {
-      title:"item 2",
+      title:"item 3",
       path:"assets/images/library/p3.jpeg",
       avatar:"assets/images/library/p3.jpeg"
     
     }
     ,
     {
-      title:"item 2",
+      title:"item 4",
       path:"assets/images/library/coc/p4.jpeg",
       avatar:"assets/images/library/coc/p4.jpeg"
     }
     ,
     {
-      title:"item 2",
+      title:"item 5",
       path:"assets/images/library/coc/c1.jpeg",
       avatar:"assets/images/library/coc/c1.jpeg"
     },
     {
-      title:"item 2",
+      title:"item 6",
       path:"assets/images/library/coc/c2.jpeg",
       avatar:"assets/images/library/coc/c2.jpeg"
     },
     {
-      title:"item 2",
+      title:"item 7",
       path:"assets/images/library/coc/c3.jpeg",
       avatar:"assets/images/library/coc/c3.jpeg"
     }
